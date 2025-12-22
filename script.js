@@ -21,6 +21,27 @@ const projects = [
             terms: 'By using this app, you agree to our terms. The app is provided "as is". We reserve the right to modify services or ads at any time.',
             support: 'For support, please contact us via the developer email on the Play Store listing.'
         }
+    },
+    {
+        id: 'quizzly',
+        title: 'Quizzly',
+        description: 'Exam preparation and progress tracking app for competitive exams.',
+        fullDescription: 'Quizzly helps users prepare for competitive examinations (such as UPSC) by providing practice quizzes, study materials, and progress tracking. It uses a personalized approach to help users focus on weak areas.',
+        image: 'https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=1080&auto=format&fit=crop',
+        tags: ['Android', 'Firebase', 'Google Auth', 'Education'],
+        link: '#',
+        version: '1.0.0',
+        lastUpdated: 'Dec 22, 2024',
+        features: [
+            'Practice quizzes and mock exams',
+            'Progress tracking',
+            'Offline study materials',
+            'Google Sign-In',
+            'Personalized insights'
+        ],
+        policies: {
+            // Policies are handled via separate page
+        }
     }
 ];
 
