@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account & Data - DevXQueries Flashcards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .page-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--muted-foreground);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            color: var(--foreground);
+        }
+
+        .policy-document {
+            background: var(--muted);
+            padding: 2.5rem;
+            border-radius: 1rem;
+            border: 1px solid var(--border);
+        }
+
+        .policy-document h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .policy-doc-meta {
+            color: var(--muted-foreground);
+            font-size: 0.875rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .policy-section {
+            margin-bottom: 2rem;
+        }
+
+        .policy-section h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--foreground);
+        }
+
+        .policy-section p,
+        .policy-section li {
+            color: var(--muted-foreground);
+            line-height: 1.7;
+            margin-bottom: 0.75rem;
+        }
+
+        .policy-section ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="../../index.html" class="logo">DevShowcase.</a>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <a href="../../projects/flashcard-app.html" class="back-link">&larr; Back to FlashCard App Details</a>
+
+        <div class="policy-document">
+            <h1>Delete Account & Data</h1>
+            <div class="policy-doc-meta">
+                Account and Data Deletion Request
+            </div>
+
+            <p style="margin-bottom: 1.5rem; font-size: 1.125rem; line-height: 1.6;">
+                Users of the DevXQueries Flashcards app can request deletion of their account and associated data at any
+                time.
+            </p>
+
+            <div class="policy-section">
+                <h3>🧾 How to Request Account Deletion</h3>
+                <p>To delete your account and associated data, please follow these steps:</p>
+                <ol
+                    style="list-style: decimal; padding-left: 1.5rem; color: var(--muted-foreground); margin-bottom: 1rem;">
+                    <li style="margin-bottom: 0.5rem;">Send an email to <a href="mailto:devxqueries@gmail.com"
+                            style="color: var(--foreground);">devxqueries@gmail.com</a></li>
+                    <li style="margin-bottom: 0.5rem;">Use the subject line: <strong>“Delete My DevXQueries
+                            Account”</strong></li>
+                    <li style="margin-bottom: 0.5rem;">In the email body, include:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>The email address used to sign in to the app</li>
+                            <li>(Optional) Reason for deletion</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>Once the request is received, we will verify the account and process the deletion.</p>
+            </div>
+
+            <div class="policy-section">
+                <h3>🗑️ What Data Is Deleted</h3>
+                <p>When an account deletion request is processed, the following data will be permanently deleted:</p>
+                <ul>
+                    <li>User authentication account (Firebase Authentication)</li>
+                    <li>App usage data associated with the account</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h3>📦 Data That May Be Retained Temporarily</h3>
+                <p>Some data may be retained for a limited period where required by law or for legitimate business
+                    purposes:</p>
+                <ul>
+                    <li>Anonymous analytics data (non-identifiable)</li>
+                    <li>Crash and performance logs (aggregated and anonymized)</li>
+                </ul>
+                <p>Such data, if retained, is not linked to the user’s identity and is automatically deleted according
+                    to Google Firebase retention policies.</p>
+            </div>
+
+            <div class="policy-section">
+                <h3>⏱️ Deletion Timeframe</h3>
+                <ul>
+                    <li>Account and associated personal data are deleted within 30 days of receiving a valid request.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h3>📧 Contact</h3>
+                <p>If you have questions about account deletion or data privacy, contact:</p>
+                <p>
+                    Email: <a href="mailto:devxqueries@gmail.com"
+                        style="color: var(--foreground);">devxqueries@gmail.com</a><br>
+                    Developer: DevXQueries
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 DevXQueries. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
