@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStream IDE - Details & Policies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .page-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--muted-foreground);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            color: var(--foreground);
+        }
+
+        .hero-image {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            border-radius: var(--radius);
+            margin-bottom: 2rem;
+            border: 1px solid var(--border);
+        }
+
+        .meta-tags {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            align-items: center;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 3rem 0 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="../index.html" class="logo">DevShowcase.</a>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <a href="../index.html" class="back-link">&larr; Back to Projects</a>
+
+        <div class="meta-tags">
+            <span class="tag">v3.0.0</span>
+            <span class="last-updated">Updated: Dec 05, 2024</span>
+        </div>
+
+        <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.1;">CodeStream IDE</h1>
+        <p style="font-size: 1.25rem; color: var(--muted-foreground); margin-bottom: 2rem;">A collaborative code editor
+            built for remote pair programming teams.</p>
+
+        <img src="https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RlJTIwZWRpdG9yJTIwc2NyZWVuJTIwcHJvZ3JhbW1pbmd8ZW58MXx8fHwxNzY2MzczNDYwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            alt="CodeStream IDE" class="hero-image">
+
+        <h2 class="section-title">Project Overview</h2>
+        <p style="line-height: 1.8; margin-bottom: 1.5rem; color: var(--foreground);">
+            CodeStream IDE redefines remote collaboration for development teams. It features a high-performance code
+            editor based on Monaco, with built-in video conferencing and real-time cursor tracking. Developers can share
+            terminals, run tests synchronously, and debug together in a unified environment, eliminating the friction of
+            screen sharing.
+        </p>
+
+        <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Key Features</h3>
+        <ul class="features-list">
+            <li>Low-latency collaborative editing (OT based)</li>
+            <li>Integrated high-quality video and voice chat</li>
+            <li>Shared terminal sessions</li>
+            <li>Git integration with visual conflict resolution</li>
+            <li>Plugin system for language support</li>
+        </ul>
+
+        <h3 style="font-size: 1.25rem; font-weight: 600; margin: 2rem 0 1rem;">Technologies</h3>
+        <div class="tags">
+            <span class="tag">Electron</span><span class="tag">WebRTC</span><span class="tag">React</span><span
+                class="tag">GraphQL</span>
+        </div>
+
+        <h2 class="section-title">Policies & Legal</h2>
+
+        <div class="policy-card">
+            <h5>🛡️ Privacy Policy</h5>
+            <p>Session content, including code and voice data, is peer-to-peer encrypted and does not pass through our
+                recording servers unless explicitly enabled for archival purposes. Minimal metadata is logged for
+                service optimization.</p>
+        </div>
+
+        <div class="policy-card" style="margin-top: 1.5rem;">
+            <h5>📄 EULA</h5>
+            <p>The software is licensed under a proprietary EULA. Redistribution or reverse engineering is prohibited.
+                Commercial use requires a valid team license.</p>
+        </div>
+
+        <div class="policy-card" style="margin-top: 1.5rem;">
+            <h5>❓ Support</h5>
+            <p>Community support is available via our Discord server. Priority email support is provided for paid team
+                plans.</p>
+        </div>
+
+        <div style="margin-top: 4rem; text-align: center;">
+            <a href="https://example.com/codestream" target="_blank" class="button primary">Visit Live Project</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Developer Showcase. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
