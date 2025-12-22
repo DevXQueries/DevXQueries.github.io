@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashCard App - Details & Policies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .page-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--muted-foreground);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            color: var(--foreground);
+        }
+
+        .hero-image {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            border-radius: var(--radius);
+            margin-bottom: 2rem;
+            border: 1px solid var(--border);
+        }
+
+        .meta-tags {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            align-items: center;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 3rem 0 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="../index.html" class="logo">DevShowcase.</a>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <a href="../index.html" class="back-link">&larr; Back to Projects</a>
+
+        <div class="meta-tags">
+            <span class="tag">v1.0.0</span>
+            <span class="last-updated">Updated: Dec 22, 2024</span>
+        </div>
+
+        <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.1;">FlashCard App</h1>
+        <p style="font-size: 1.25rem; color: var(--muted-foreground); margin-bottom: 2rem;">A powerful memorization tool
+            built with Jetpack Compose for modern UI/UX.</p>
+
+        <img src="../iconlogo.png" alt="FlashCard App" class="hero-image">
+
+        <h2 class="section-title">Project Overview</h2>
+        <p style="line-height: 1.8; margin-bottom: 1.5rem; color: var(--foreground);">
+            FlashCard App is designed to help users memorize information efficiently. Built natively for Android using
+            Jetpack Compose, it offers a smooth and responsive interface. The app features secure authentication via
+            Firebase and integrates AdMob for monetization while maintaining a user-friendly experience.
+        </p>
+
+        <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Key Features</h3>
+        <ul class="features-list">
+            <li>Modern UI built with Jetpack Compose</li>
+            <li>Secure user authentication with Firebase</li>
+            <li>Cloud sync for flashcard decks</li>
+            <li>Spaced repetition algorithm</li>
+            <li>Ad-supported (AdMob integration)</li>
+        </ul>
+
+        <h3 style="font-size: 1.25rem; font-weight: 600; margin: 2rem 0 1rem;">Technologies</h3>
+        <div class="tags">
+            <span class="tag">Android</span><span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span
+                class="tag">Firebase</span><span class="tag">AdMob</span>
+        </div>
+
+        <h2 class="section-title">Policies & Legal</h2>
+
+        <div class="policy-card">
+            <h5>🛡️ Privacy Policy</h5>
+            <p>We prioritize user privacy. Personal data collected via Firebase Auth is used solely for account
+                management and synchronization. AdMob may collect anonymous data to serve relevant ads.</p>
+        </div>
+
+        <div class="policy-card" style="margin-top: 1.5rem;">
+            <h5>📄 Terms of Service</h5>
+            <p>By using this app, you agree to our terms. The app is provided "as is". We reserve the right to modify
+                services or ads at any time.</p>
+        </div>
+
+        <div class="policy-card" style="margin-top: 1.5rem;">
+            <h5>❓ Support</h5>
+            <p>For support, please contact us via the developer email on the Play Store listing.</p>
+        </div>
+
+        <div style="margin-top: 4rem; text-align: center;">
+            <a href="#" class="button primary" onclick="alert('Play Store link coming soon!')">Download on Play
+                Store</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Developer Showcase. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
