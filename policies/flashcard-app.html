@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlashCard App - Details & Policies</title>
+    <title>Privacy Policy - FlashCard App</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -29,28 +29,73 @@
             color: var(--foreground);
         }
 
-        .hero-image {
-            width: 100%;
-            aspect-ratio: 16/9;
-            object-fit: cover;
-            border-radius: var(--radius);
-            margin-bottom: 2rem;
+        .policy-document {
+            background: var(--muted);
+            padding: 2.5rem;
+            border-radius: 1rem;
             border: 1px solid var(--border);
         }
 
-        .meta-tags {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            align-items: center;
+        .policy-document h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
         }
 
-        .section-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin: 3rem 0 1.5rem;
-            padding-bottom: 1rem;
+        .policy-doc-meta {
+            color: var(--muted-foreground);
+            font-size: 0.875rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
             border-bottom: 1px solid var(--border);
+        }
+
+        .policy-section {
+            margin-bottom: 2rem;
+        }
+
+        .policy-section h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--foreground);
+        }
+
+        .policy-section h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 1rem 0 0.5rem;
+            color: var(--foreground);
+        }
+
+        .policy-section p,
+        .policy-section li {
+            color: var(--muted-foreground);
+            line-height: 1.7;
+            margin-bottom: 0.75rem;
+        }
+
+        .policy-section ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .policy-section a {
+            color: var(--foreground);
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        .policy-section a:hover {
+            color: #000;
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--border);
+            margin: 2rem 0;
         }
     </style>
 </head>
@@ -63,69 +108,141 @@
     </header>
 
     <main class="page-container">
-        <a href="../index.html" class="back-link">&larr; Back to Projects</a>
+        <a href="../projects/flashcard-app.html" class="back-link">&larr; Back to FlashCard App Details</a>
 
-        <div class="meta-tags">
-            <span class="tag">v1.0.0</span>
-            <span class="last-updated">Updated: Dec 22, 2024</span>
+        <div class="policy-document">
+            <h1>Privacy Policy</h1>
+            <div class="policy-doc-meta">
+                Last updated: December 22, 2025
+            </div>
+
+            <p style="margin-bottom: 1.5rem; font-size: 1.125rem; line-height: 1.6;">
+                This Privacy Policy explains how <strong>DevXQueries</strong> (“we”, “our”, or “us”) collects, uses, and
+                protects information when you use our <strong>Flashcard Learning App</strong> (“the App”).
+            </p>
+
+            <div class="policy-section">
+                <h3>1. Overview of the App</h3>
+                <p>Our app is a flashcard-based learning application that uses a spaced repetition algorithm (inspired
+                    by Anki) to help users remember information efficiently. The app sends push notifications to remind
+                    users to review flashcards.</p>
+                <p>The app is built using Android (Jetpack Compose) with MVVM architecture, uses a local Room database,
+                    Firebase Authentication, and displays ads via Google AdMob.</p>
+            </div>
+
+            <div class="policy-section">
+                <h3>2. Information We Collect</h3>
+
+                <h4>a) Personal Information</h4>
+                <p>We may collect limited personal information only for authentication purposes, such as:</p>
+                <ul>
+                    <li>Email address (via Firebase Authentication)</li>
+                </ul>
+                <p>We do not collect names, phone numbers, or physical addresses.</p>
+
+                <h4>b) App Usage & Technical Data</h4>
+                <p>We may collect non-personal information including:</p>
+                <ul>
+                    <li>App usage patterns</li>
+                    <li>Crash reports</li>
+                    <li>Device type and OS version</li>
+                    <li>Performance data</li>
+                </ul>
+                <p>This information is used only to improve app stability and user experience.</p>
+
+                <h4>c) Local Data Storage</h4>
+                <p>Flashcards, learning progress, and repetition schedules are stored locally on your device using a
+                    Room database.</p>
+                <p>We do not upload flashcard content to our servers.</p>
+            </div>
+
+            <div class="policy-section">
+                <h3>3. Notifications</h3>
+                <p>The app sends push notifications to remind users about flashcard reviews based on the spaced
+                    repetition algorithm.</p>
+                <p>You can disable notifications at any time from your device settings.</p>
+            </div>
+
+            <div class="policy-section">
+                <h3>4. Third-Party Services</h3>
+                <p>The app uses the following third-party services:</p>
+
+                <h4>🔹 Firebase</h4>
+                <ul>
+                    <li>Used for authentication and app analytics</li>
+                    <li>May collect basic user identifiers (such as email)</li>
+                    <li>Privacy Policy: <a href="https://policies.google.com/privacy"
+                            target="_blank">https://policies.google.com/privacy</a></li>
+                </ul>
+
+                <h4>🔹 Google AdMob</h4>
+                <ul>
+                    <li>Used to display advertisements</li>
+                    <li>May collect advertising identifiers</li>
+                    <li>Ads may be personalized or non-personalized depending on user settings</li>
+                </ul>
+                <p>Google’s ad policies apply: <a href="https://policies.google.com/technologies/ads"
+                        target="_blank">https://policies.google.com/technologies/ads</a></p>
+            </div>
+
+            <div class="policy-section">
+                <h3>5. How We Use Information</h3>
+                <p>Collected information is used to:</p>
+                <ul>
+                    <li>Authenticate users</li>
+                    <li>Maintain learning progress</li>
+                    <li>Improve app performance</li>
+                    <li>Fix bugs and crashes</li>
+                    <li>Display relevant ads</li>
+                </ul>
+                <p>We do not sell or share user data with unauthorized third parties.</p>
+            </div>
+
+            <div class="policy-section">
+                <h3>6. Data Security</h3>
+                <p>We take reasonable measures to protect user data. However, no digital system is completely secure,
+                    and we cannot guarantee absolute security.</p>
+            </div>
+
+            <div class="policy-section">
+                <h3>7. Children’s Privacy</h3>
+                <p>Our app is not intended for children under the age of 13. We do not knowingly collect personal
+                    information from children.</p>
+                <p>If you believe a child has provided personal information, please contact us so we can remove it.</p>
+            </div>
+
+            <div class="policy-section">
+                <h3>8. User Choices & Rights</h3>
+                <p>Users can:</p>
+                <ul>
+                    <li>Disable notifications via device settings</li>
+                    <li>Remove their account through Firebase Authentication</li>
+                    <li>Uninstall the app to delete all locally stored data</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h3>9. Changes to This Privacy Policy</h3>
+                <p>We may update this Privacy Policy from time to time. Changes will be posted on this page and take
+                    effect immediately.</p>
+            </div>
+
+            <div class="policy-section">
+                <h3>10. Contact Us</h3>
+                <p>If you have questions or concerns about this Privacy Policy, contact us at:</p>
+                <p>
+                    📧 Email: <a href="mailto:devxqueries@gmail.com">devxqueries@gmail.com</a><br>
+                    🌐 Website: <a href="https://devxqueries.github.io"
+                        target="_blank">https://devxqueries.github.io</a>
+                </p>
+            </div>
         </div>
 
-        <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.1;">FlashCard App</h1>
-        <p style="font-size: 1.25rem; color: var(--muted-foreground); margin-bottom: 2rem;">A powerful memorization tool
-            built with Jetpack Compose for modern UI/UX.</p>
-
-        <img src="../iconlogo.png" alt="FlashCard App" class="hero-image">
-
-        <h2 class="section-title">Project Overview</h2>
-        <p style="line-height: 1.8; margin-bottom: 1.5rem; color: var(--foreground);">
-            FlashCard App is designed to help users memorize information efficiently. Built natively for Android using
-            Jetpack Compose, it offers a smooth and responsive interface. The app features secure authentication via
-            Firebase and integrates AdMob for monetization while maintaining a user-friendly experience.
-        </p>
-
-        <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Key Features</h3>
-        <ul class="features-list">
-            <li>Modern UI built with Jetpack Compose</li>
-            <li>Secure user authentication with Firebase</li>
-            <li>Cloud sync for flashcard decks</li>
-            <li>Spaced repetition algorithm</li>
-            <li>Ad-supported (AdMob integration)</li>
-        </ul>
-
-        <h3 style="font-size: 1.25rem; font-weight: 600; margin: 2rem 0 1rem;">Technologies</h3>
-        <div class="tags">
-            <span class="tag">Android</span><span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span
-                class="tag">Firebase</span><span class="tag">AdMob</span>
-        </div>
-
-        <h2 class="section-title">Policies & Legal</h2>
-
-        <div class="policy-card">
-            <h5>🛡️ Privacy Policy</h5>
-            <p>We prioritize user privacy. Personal data collected via Firebase Auth is used solely for account
-                management and synchronization. AdMob may collect anonymous data to serve relevant ads.</p>
-        </div>
-
-        <div class="policy-card" style="margin-top: 1.5rem;">
-            <h5>📄 Terms of Service</h5>
-            <p>By using this app, you agree to our terms. The app is provided "as is". We reserve the right to modify
-                services or ads at any time.</p>
-        </div>
-
-        <div class="policy-card" style="margin-top: 1.5rem;">
-            <h5>❓ Support</h5>
-            <p>For support, please contact us via the developer email on the Play Store listing.</p>
-        </div>
-
-        <div style="margin-top: 4rem; text-align: center;">
-            <a href="#" class="button primary" onclick="alert('Play Store link coming soon!')">Download on Play
-                Store</a>
-        </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Developer Showcase. All rights reserved.</p>
+            <p>&copy; 2025 DevXQueries. All rights reserved.</p>
         </div>
     </footer>
 </body>

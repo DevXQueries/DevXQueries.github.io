@@ -28,7 +28,7 @@ const projectsGrid = document.getElementById('projectsGrid');
 
 function renderProjects() {
     projectsGrid.innerHTML = projects.map(project => `
-        <div class="project-card" onclick="window.location.href='policies/${project.id}.html'">
+        <div class="project-card" onclick="window.location.href='projects/${project.id}.html'">
             <div class="project-image" style="background-image: url('${project.image}')"></div>
             <div class="project-card-content">
                 <div class="project-header">
